@@ -1,0 +1,19 @@
+{
+  "name": "app-indecision",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch;",
+    "server": "live-server public",
+    "code": "yarn run server & yarn run babel"
+  },
+  "license": "MIT",
+  "author": "Steve McDonald",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
